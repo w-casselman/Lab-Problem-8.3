@@ -13,7 +13,19 @@ int convertRomanToInt(string s);
 
 int main(void)
 {
-	cout << convertRomanToInt("MMXXIII") << endl;
+	while (true)
+	{
+		string str;
+		cout << "Enter Roman number or Q to quit: ";
+		cin >> str;
+
+		if (str == "Q")
+		{
+			break;
+		}
+
+		cout << str << " = " << convertRomanToInt(str) << endl;
+	}
 
 	return 0;
 }
